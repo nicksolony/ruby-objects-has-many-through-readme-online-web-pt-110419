@@ -8,7 +8,7 @@ class Meal
     @customer=customer
     @total = total
     @tip = tip
-    @@total << self
+    @@all << self
   end
   
 end
