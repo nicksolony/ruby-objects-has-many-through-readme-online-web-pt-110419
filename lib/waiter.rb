@@ -24,7 +24,7 @@ class Waiter
   
   def best_tipper
     #high_tip=0
-    meals.collect {|meal| meal.tip}
+    meals.collect {|meal| meal.tip}.max
     
   end
   
