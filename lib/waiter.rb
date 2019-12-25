@@ -22,9 +22,13 @@ class Waiter
     Meal.all.select {|meal| meal.waiter == self}
   end
   
+  def highest_tip
+    meals.collect {|meal| meal.tip}.max  
+  end
+  
   def best_tipper
     #high_tip=0
-    meals.collect {|meal| meal.tip}.max
+    
     
   end
   
