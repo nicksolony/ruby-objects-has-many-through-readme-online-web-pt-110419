@@ -26,6 +26,10 @@ class Waiter
     meals.collect {|meal| meal.tip}.max  
   end
   
+  def highest_paid_meal
+    meals.select{|meal|  meal.tip == highest_tip}.customer
+  end
+  
   def best_tipper
     meals.select{|meal|  meal.tip == highest_tip}.customer
     
