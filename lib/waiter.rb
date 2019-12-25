@@ -31,7 +31,7 @@ class Waiter
   end
   
   def best_tipper
-    meals.select{|meal|  meal.tip == highest_tip}.customer
+    highest_paid_meal.customer
     
     
   end
